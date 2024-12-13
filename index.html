@@ -60,46 +60,11 @@
         display: inline;
       }
 
-      #navigation li a {
-        color: white;
-        padding: 14px 20px;
-        text-decoration: none;
-        display: inline-block;
-      }
-
-      #navigation li a:hover {
-        background-color: #1D3C6A; /* Cello */
-      }
-
       /* Home Section */
       #home {
         text-align: center;
         padding: 50px 20px;
         background-color: #DEB887; /* Tumbleweed */
-      }
-
-      #home img {
-        width: 80%;
-        max-width: 600px;
-        height: auto;
-      }
-
-      /* About Me Section */
-      #about {
-        padding: 30px;
-        background-color: #fff;
-      }
-
-      #about h2 {
-        font-size: 2.5em;
-        color: #1D3C6A; /* Cello for heading */
-        margin-bottom: 10px;
-      }
-
-      #about p {
-        font-size: 1.2em;
-        line-height: 1.8;
-        margin-bottom: 20px;
       }
 
       /* Portfolio Section */
@@ -139,8 +104,11 @@
         color: #1D3C6A; /* Cello for project title */
       }
 
+      /* Consolidated .project-details p */
       .project-details p {
         font-size: 1.2em;
+        line-height: 1.8;
+        margin-bottom: 20px;
         color: #DEB887; /* Tumbleweed for text */
       }
 
@@ -150,6 +118,24 @@
       }
 
       .project-details a:hover {
+        text-decoration: underline;
+      }
+
+      /* About Me Section */
+      #about {
+        padding: 30px;
+        background-color: #fff;
+      }
+
+      #about h2 {
+        font-size: 2.5em;
+        color: #1D3C6A; /* Cello for heading */
+        margin-bottom: 10px;
+      }
+
+      /* Links and Hover effects */
+      .project-details a:hover,
+      #contact a:hover {
         text-decoration: underline;
       }
 
@@ -171,11 +157,6 @@
         font-size: 1.2em;
       }
 
-      #contact a:hover {
-        text-decoration: underline;
-      }
-
-      /* Footer Section */
       #footer {
         background-color: #7E4B3C; /* Roman Coffee */
         color: white;
@@ -183,6 +164,34 @@
         padding: 10px;
         font-size: 1em;
         clear: both;
+      }
+
+      /* Specific image settings */
+      #home img {
+        width: 80%;
+        max-width: 600px;
+        height: auto;
+        border-radius: 8px;
+      }
+
+      /* #navigation styles */
+      #navigation li a {
+        color: white;
+        padding: 14px 20px;
+        text-decoration: none;
+        display: inline-block;
+      }
+
+      #navigation li a:hover {
+        background-color: #1D3C6A; /* Cello */
+      }
+
+      /* Fixing specificity issues with links */
+      #navigation li a {
+        color: white;
+        padding: 14px 20px;
+        text-decoration: none;
+        display: inline-block;
       }
 
     </style>
@@ -208,15 +217,15 @@
       <!-- Home Section -->
       <div id="home">
         <h2>Welcome to My Personal Website</h2>
-        <p>Hi, I'm Fodé Saïdou Doumbouya, a passionate creator with a deep love for music, digital art, and reading. I'm currently focused on expanding my skills in UI & UX design, graphic design, and programming, with the goal of becoming a versatile web designer. I’m driven by a curiosity for both aesthetics and functionality, and I aim to blend these elements to create seamless, intuitive, and visually compelling digital experiences.</p>
+        <p>Hi, I'm Fodé Saïdou Doumbouya, a passionate creator with a deep love for music, digital art, and reading. I'm currently focused on expanding my skills in UI &amp UX design, graphic design, and programming, with the goal of becoming a versatile web designer. I’m driven by a curiosity for both aesthetics and functionality, and I aim to blend these elements to create seamless, intuitive, and visually compelling digital experiences.</p>
         <p>Feel free to explore my portfolio or learn more about me in the <a href="#about">About Me</a> section.</p>
-        <img src="your-image.jpg" alt="A picture of you" />
+        <img src="_KVH0707.JPG" alt="A picture of Fodé Saïdou Doumbouya">
       </div>
 
       <!-- About Me Section -->
       <div id="about">
         <h2>About Me</h2>
-        <p>Hi! I'm **Fodé Saïdou Doumbouya**, a passionate creator with a deep love for music, digital art, and reading. I'm currently focused on expanding my skills in UI & UX design, graphic design, and programming, with the goal of becoming a versatile web designer. I’m driven by a curiosity for both aesthetics and functionality, and I aim to blend these elements to create seamless, intuitive, and visually compelling digital experiences.</p>
+        <p>Hi! I'm Fodé Saïdou Doumbouya, a passionate creator with a deep love for music, digital art, and reading. I'm currently focused on expanding my skills in UI &amp UX design, graphic design, and programming, with the goal of becoming a versatile web designer. I’m driven by a curiosity for both aesthetics and functionality, and I aim to blend these elements to create seamless, intuitive, and visually compelling digital experiences.</p>
         
         <p>Whether I’m exploring the latest design trends or diving into new coding techniques, I’m always looking for ways to push my creative boundaries. I enjoy experimenting with innovative design concepts and constantly refining my craft to bring fresh ideas to life. My passion lies in crafting digital experiences that are not only beautiful but also user-friendly and functional.</p>
       </div>
@@ -226,7 +235,7 @@
         <h2>My Work</h2>
         
         <div class="project">
-          <img src="project1.jpg" alt="Project 1">
+          <img src="AOS.png" alt="Rebrand it! Project">
           <div class="project-details">
             <h3>Rebrand it!</h3>
             <p>As part of a brand overhaul for Art of Sport, I took on the challenge of redesigning the logo and developing a fresh branding and marketing strategy. The goal was to give the brand more personality and differentiation from its competitors. Through strategic design choices, I crafted a new visual identity that resonates with a younger, more diverse audience, enhancing the brand’s emotional connection with consumers.</p>
@@ -235,7 +244,7 @@
         </div>
 
         <div class="project">
-          <img src="project2.jpg" alt="Project 2">
+          <img src="WEFILM.png" alt="WeFilm Project">
           <div class="project-details">
             <h3>WeFilm</h3>
             <p>In collaboration with a talented group of designers, I helped conceptualize and design a streaming platform exclusively for independent filmmakers. This app was created to address the challenges faced by indie filmmakers, providing them with a dedicated space to showcase their work and compete against mainstream media.</p>
@@ -244,7 +253,7 @@
         </div>
 
         <div class="project">
-          <img src="project3.jpg" alt="Project 3">
+          <img src="SWEETSPOT.png" alt="The Sweet Spot Project">
           <div class="project-details">
             <h3>The Sweet Spot</h3>
             <p>Working with a talented team of designers and filmmakers, I contributed to the production of a documentary about a local ice cream shop. This project gave me the opportunity to learn the intricacies of film direction, editing, and production.</p>
